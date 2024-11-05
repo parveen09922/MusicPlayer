@@ -1,0 +1,197 @@
+#parentDiv {
+  margin-top: 15px;
+  transition: transform 0.3s ease-in-out;
+}
+
+#parentDiv:hover {
+  transform: scale(1.1);
+}
+
+#heading {
+  background: radial-gradient(
+    rgb(0, 195, 255) 40%,
+    rgb(0, 255, 102) 20%,
+    yellow
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Style the button */
+#toggle-button {
+  margin-left: 8px;
+  background-color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the toggle icon */
+.toggle-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* Style the toggle text */
+.toggle-text {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Style the button when it's active ( toggled on ) */
+#toggle-button.active {
+  background-color: #4caf50;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Style the toggle icon when it's active ( toggled on ) */
+#toggle-button.active .toggle-icon {
+  background-color: #fff;
+}
+
+/* main */
+
+main {
+  margin-top: 20px;
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: space-around;
+}
+
+#song {
+    background-color: #ccc;
+    border-radius: 5px;
+}
+
+#song:active {
+    border-style: dotted;
+    color: #4caf50;
+}
+
+
+
+#all-songs {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers content vertically */
+  align-items: center; /* Centers content horizontally */
+  text-align: center; /* Centers text within the section */
+  height: 100%; /* Ensures the section takes up its full height */
+  padding: 20px; /* Adds padding around the content */
+  background-color: #4caf50;
+  width: 30%;
+  height: 550px;
+  transition: transform 0.3s ease-in-out;
+}
+
+#all-songs:hover {
+  transform: scale(1.1);
+}
+
+#all-songs label {
+  margin-bottom: 15px; /* Adds space between the label and the select dropdown */
+}
+
+#all-songs select {
+  margin-bottom: 20px; /* Adds space between the select dropdown and the rest of the content */
+}
+
+#songCard {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #4caf50;
+  width: 30%;
+  height: 550px;
+  transition: transform 0.3s ease-in-out;
+}
+
+#addPlayList {
+  margin-top: 8px;
+}
+
+#button {
+  margin-top: 8px;
+}
+
+#songCard:hover {
+  transform: scale(1.1);
+}
+
+#playList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #4caf50;
+  width: 30%;
+  height: 550px;
+  transition: transform 0.3s ease-in-out;
+}
+
+#playList:hover {
+  transform: scale(1.1);
+}
+
+#createPlaylist {
+    border-radius: 5px;
+}
+
+#playDiv1 {
+    margin-top: 10px;
+}
+
+#playDiv2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8px;
+    gap: 2px;
+}
+
+/* Song buttons */
+#showFilterSong button {
+  margin: 5px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+#showFilterSong button:hover {
+  background-color: #ddd;
+}
+
+#singer {
+  margin-top: 10px;
+  border-radius: 5px;
+  margin: auto;
+}
+
+#newPlayBtn {
+    background-color: #ccccccb0;
+    border-radius: 5px;
+}
+
+#removeBtn {
+    background-color: #ccccccb0;
+    border-radius: 5px;
+
+}
+
+footer {
+    margin-top: 50px;
+    margin-left: 10px;
+}

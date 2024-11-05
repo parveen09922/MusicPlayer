@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="MusicPlayer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+   
+ 
+    <!-- heading -->
+
+    <div id="parentDiv" class="d-flex justify-content-center">
+      <h1 id="heading" class="fs-1">
+        <i class="fa-solid fa-music"></i>Music Player
+      </h1>
+    </div>
+    <!-- toggle -->
+    <section id="toggle">
+        <!-- Create a button element with a unique ID -->
+  <button id="toggle-button" aria-label="Toggle button">
+      <span class="toggle-icon"></span>
+      <span class="toggle-text">Light</span>
+    </button>
+      </section>
+    
+
+    <main>
+        <!-- all songs -->
+    <section id="all-songs">
+        <label for="song"><h3>Filter by Songs:</h3></label>
+        <select name="allSongs" id="song">
+            <option id="all" value="all">All</option>   
+            <option id="rock" value="rock">Rock</option>
+            <option id="hip-hop" value="Hip Hop">Hip Hop</option>
+            <option id="pop" value="pop">Pop</option>
+        </select>
+        <div id="showFilterSong">
+            <h1>All Songs</h1>
+
+        </div>
+    </section>
+    <!-- songs card -->
+    <section id="songCard">
+        <div id="layer1">
+        </div>
+        <div id="layer2">
+
+        </div>
+        <div id="button">
+             <button class="btn btn-primary" id="left"><i class="fa-solid fa-backward"></i></button>
+             <button class="btn btn-primary" id="right"><i class="fa-solid fa-forward"></i></button>
+        </div>
+        <div id="addPlayList">
+            <button class="btn btn-secondary" id="playListBtn"><i class="fa-solid fa-play"></i>Add to Playlist</button>
+        </div>
+    </section>
+    <!-- playlist -->
+    <section id="playList">
+       <div id="playDiv1">
+        <input type="text" id="createPlaylist" required placeholder="Enter playlist name">
+        <button class="btn btn-secondary" id="create">Create Playlist</button>
+       </div>
+       <div id="playDiv2">
+        <h2>Current Playlist</h2>
+
+       </div>
+       <div id="playDiv3">
+        <h2>All Playlist</h2>
+       </div>
+    </section>
+    </main>
+
+    <footer>
+        <input type="text" id="searchSong" required placeholder="song name">
+        <label for="searchSong"><i class="fa-solid fa-magnifying-glass"></i></label>
+        <br />
+        <br />
+        <input type="text" id="searchPlaylist" required placeholder="Playlist name">
+        <label for="searchPlaylist"><i class="fa-solid fa-magnifying-glass"></i></label>
+       
+    </footer>
+
+  
+    
+   
+    <script src="MusicPlayer.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
